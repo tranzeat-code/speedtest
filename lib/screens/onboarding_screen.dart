@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'login_screen.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -17,17 +16,20 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     {
       "color": Colors.deepOrange,
       "title": "Welcome to SpeedTest",
-      "description": "Test your internet speed with accuracy."
+      "description": "Test your internet speed with accuracy.",
+      // add image here
     },
     {
       "color": Colors.green,
       "title": "Real-Time Results",
       "description": "Get real-time speed test results and insights."
+      // add image here
     },
     {
       "color": Colors.blue,
       "title": "Start Your Journey",
       "description": "Let's get started and test your speed now!"
+      // add image here
     },
   ];
 
@@ -107,6 +109,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               child: ElevatedButton(
                 onPressed: () {
                   if (_currentPage == onboardingPages.length - 1) {
+                    // 2
                     // Navigate to Login Screen on last step
                     Navigator.pushReplacement(
                       context,
